@@ -1,0 +1,56 @@
+.container {
+    background-image: url("../assets/bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-title {
+    box-sizing: border-box;
+    padding: 20px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+    font-size: 16.6464px;
+    height: 58.26px;
+    background: #fff0e7;
+    border-radius: 8.32321px;
+    user-select: none;
+}
+
+.item-text {
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #fff0e7;
+    border-radius: 8.32321px;
+    width: 100%;
+    display: none;
+}
+
+.item-input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    appearance: none;
+}
+
+.item-input:checked ~ .item-text {
+    display: block;
+}
